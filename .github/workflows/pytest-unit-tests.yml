@@ -72,5 +72,5 @@ jobs:
       if: matrix.os != 'windows-2019'
       run: |
         python3 -m pytest --doctest-modules tests/test_algos.py
-    ## python3 -m tests/test_docstrings.py
+        #python3 tests/test_docstrings.py
 

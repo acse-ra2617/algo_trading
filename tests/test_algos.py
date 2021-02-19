@@ -1,7 +1,7 @@
 """test file for examples"""
 import numpy as np
 import pytest
-from algos import Summation
+from algos import summation
 
 
 class TestExample(object):
@@ -10,9 +10,9 @@ class TestExample(object):
     """
 
     @pytest.mark.parametrize('a, b, c', [
-        (2, 3, 5,)
+        (20, 3, 23,)
     ])
-    def test_Summation(self, a, b, c):
+    def test_summation(self, a, b, c):
         """ Test the gauss function """
-        out = Summation(a, b)
-        assert np.issclose(c, out)
+        out = summation(a, b)
+        assert np.isclose(c, out)
