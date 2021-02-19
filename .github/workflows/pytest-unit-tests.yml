@@ -5,10 +5,11 @@ on:
   # but only for the main branch
   push:
     branches:
-      - master
+      - main
+      - dev
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   pytest:
@@ -73,8 +74,3 @@ jobs:
         python3 -m pytest --doctest-modules tests/test_gauss.py
     ## python3 -m tests/test_docstrings.py
 
-    - name: Test with pytest
-      if: matrix.os == 'windows-2019'
-      run: |
-        python -m pytest --doctest-modules tests/test_gauss.py
-    ## py tests/test_docstrings.py
