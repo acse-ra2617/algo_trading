@@ -39,8 +39,8 @@ jobs:
           python-version: 3.8
           os: ubuntu-20.04
 
-        - name: python37-macOs110
-          python-version: 3.7
+        - name: python36-macOs110
+          python-version: 3.6
           os: macos-11.0
 
     steps:
