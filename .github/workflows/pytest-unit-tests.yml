@@ -39,9 +39,9 @@ jobs:
           python-version: 3.8
           os: ubuntu-20.04
 
-        - name: python37-macOs110
+        - name: python37-macOs120
           python-version: 3.6
-          os: macos-11.0
+          os: macos-12.0
 
     steps:
     - name: Checkout simple_functions
@@ -62,7 +62,7 @@ jobs:
         pip3 install -r requirements.txt
     
     - name: Install dependencies Mac
-      if: matrix.os == 'macos-11.0'
+      if: matrix.os == 'macos-12.0'
       run: |
         wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
         pip3 install --upgrade pip
