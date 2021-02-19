@@ -28,7 +28,7 @@ jobs:
         name: [
            python36-windows-2019,
            python38-ubuntu2004,
-           python36-macOS110
+           python37-macOS
         ]
         include:
         - name: python36-windows-2019
@@ -39,9 +39,9 @@ jobs:
           python-version: 3.8
           os: ubuntu-20.04
 
-        - name: python36-macOs110
-          python-version: 3.6
-          os: macos-11.0
+        - name: python37-macOs
+          python-version: 3.7
+          os: macos-latest
 
     steps:
     - name: Checkout simple_functions
@@ -61,11 +61,12 @@ jobs:
         pip3 install -r requirements.txt
     
     - name: Install dependencies Mac
-      if: matrix.os == 'macos-11.0'
+      if: matrix.os == 'macos-latest'
       run: |
         wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
         pip3 install --upgrade pip
         pip3 install -r requirements.txt
+
     - name: Test with pytest
       if: matrix.os != 'windows-2019'
       run: |
