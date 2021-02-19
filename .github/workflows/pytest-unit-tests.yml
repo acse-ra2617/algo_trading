@@ -5,11 +5,10 @@ on:
   # but only for the main branch
   push:
     branches:
-      - main
-      - dev
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 jobs:
   pytest:
@@ -39,9 +38,9 @@ jobs:
           python-version: 3.8
           os: ubuntu-20.04
 
-        - name: python37-macOs11.0
-          python-version: 3.6
-          os: macOs-11.0
+        - name: python37-macOs110
+          python-version: 3.7
+          os: macos-11.0
 
     steps:
     - name: Checkout simple_functions
