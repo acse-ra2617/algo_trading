@@ -1,14 +1,14 @@
 name: algos
 channels:
 - defaults
-- conda_forge
+- conda-forge
 dependencies:
 - python>=3.6
-- pip
 - flake8
 - pytest
 - ipython
 - numpy
 - sphinx
 - pandas
-- python-binance
+- pip:
+   - python-binance==0.7.9

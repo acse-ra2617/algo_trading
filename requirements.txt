@@ -5,3 +5,6 @@ numpy
 sphinx
 pandas
 python-binance
+TA-Lib
+backtrader
+flask
