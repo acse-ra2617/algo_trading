@@ -10,3 +10,5 @@ dependencies:
 - numpy
 - sphinx
 - pandas
+- backtrader
+- flask
