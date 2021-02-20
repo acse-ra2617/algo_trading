@@ -4,3 +4,4 @@ ipython
 numpy
 sphinx
 pandas
+python-binance

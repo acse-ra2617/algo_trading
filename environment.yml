@@ -11,3 +11,4 @@ dependencies:
 - numpy
 - sphinx
 - pandas
+- python-binance
