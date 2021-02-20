@@ -5,10 +5,11 @@ on:
   # but only for the main branch
   push:
     branches:
-      - master
+      - main
+      - dev
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   pytest:
@@ -27,7 +28,7 @@ jobs:
         name: [
            python36-windows-2019,
            python38-ubuntu2004,
-           python37-macOS110
+           python37-macOS
         ]
         include:
         - name: python36-windows-2019
@@ -38,9 +39,9 @@ jobs:
           python-version: 3.8
           os: ubuntu-20.04
 
-        - name: python37-macOs110
+        - name: python37-macOs
           python-version: 3.7
-          os: macos-11.0
+          os: macos-latest
 
     steps:
     - name: Checkout simple_functions
@@ -52,7 +53,6 @@ jobs:
         sudo apt-get install python3-setuptools -y
         pip3 install --upgrade pip
         pip3 install -r requirements.txt
-
     - name: Install dependencies windows
       if: matrix.os == 'windows-2019'
       run: |
@@ -61,7 +61,7 @@ jobs:
         pip3 install -r requirements.txt
     
     - name: Install dependencies Mac
-      if: matrix.os == 'macos-11.0'
+      if: matrix.os == 'macos-latest'
       run: |
         wget https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py -O - | python
         pip3 install --upgrade pip
@@ -70,11 +70,5 @@ jobs:
     - name: Test with pytest
       if: matrix.os != 'windows-2019'
       run: |
-        python3 -m pytest --doctest-modules tests/test_gauss.py
-    ## python3 -m tests/test_docstrings.py
-
-    - name: Test with pytest
-      if: matrix.os == 'windows-2019'
-      run: |
-        python -m pytest --doctest-modules tests/test_gauss.py
-    ## py tests/test_docstrings.py
+        python3 -m pytest --doctest-modules tests/test_algos.py
+        python3 tests/test_docstrings.py

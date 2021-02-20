@@ -1,13 +1,14 @@
 name: algos
 channels:
 - defaults
-- conda_forge
+- conda-forge
 dependencies:
 - python>=3.6
-- pip
 - flake8
 - pytest
 - ipython
 - numpy
 - sphinx
 - pandas
+- backtrader
+- flask

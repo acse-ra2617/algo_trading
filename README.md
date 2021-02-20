@@ -48,4 +48,3 @@ again from within the base folder of this repository.
 * [Aemiro Habte](https://www.linkedin.com/in/aemiro-habte-772525179/)
 * [Raul Adriaensen](www.linkedin.com/in/rauladriaensen)
 
-

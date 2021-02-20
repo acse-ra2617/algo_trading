@@ -3,4 +3,4 @@
 'python test_docstrings.py' to trigger' """
 import os
 
-os.system("python -m pytest --doctest-modules ../acse_la/gauss.py")
+os.system("python -m pytest --doctest-modules ./algos/example.py")
