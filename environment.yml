@@ -10,5 +10,3 @@ dependencies:
 - numpy
 - sphinx
 - pandas
-- pip:
-   - python-binance==0.7.9

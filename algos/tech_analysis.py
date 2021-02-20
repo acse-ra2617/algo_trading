@@ -4,12 +4,13 @@ Created on Sat Feb 20 12:33:10 2021
 
 @author: raula
 """
-
-# https://github.com/mrjbq7/ta-lib
+# package sources:
 # https://ta-lib.org/
+# https://github.com/mrjbq7/ta-lib
+# python wrapper:
 # https://mrjbq7.github.io/ta-lib/
+# setting ta-lib up for windows
 # https://blog.quantinsti.com/install-ta-lib-python/#windows
-# https://mrjbq7.github.io/ta-lib/index.html
 
 
 import numpy as np

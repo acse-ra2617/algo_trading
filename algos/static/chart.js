@@ -1,3 +1,4 @@
+// example graph to find functionality of interest: https://github.com/tradingview/lightweight-charts
 var chart = LightweightCharts.createChart(document.getElementById('chart'), {
 	width: 600,
   height: 300,

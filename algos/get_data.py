@@ -8,8 +8,10 @@ Created on Sat Feb 20 01:20:56 2021
 import connect  # call in our API data
 import csv
 from binance.client import Client
-# https://python-binance.readthedocs.io/en/latest/  READ HERE for more funcs
+# https://python-binance.readthedocs.io/en/latest/  READ HERE for more func
+# web socket documentation:
 # https://github.com/binance/binance-spot-api-docs/blob/master/web-socket-streams.md
+# create account for API keys:
 # https://www.binance.com/en
 
 # create an instant of the class

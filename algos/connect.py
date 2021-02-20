@@ -5,7 +5,7 @@ Created on Sat Feb 20 01:19:25 2021
 @author: raula
 """
 
-# https://python-binance.readthedocs.io/en/latest/
+# remove your keys, our repo is public! save them locally!
 
 API_KEY = ''
 API_SECRET = ''

@@ -2,10 +2,11 @@
 """
 Created on Sat Feb 20 14:28:22 2021
 
-@author: raula
+@author: acse-ra2617
 """
 
-# https://flask.palletsprojects.com/en/1.1.x/
+# main library website: https://flask.palletsprojects.com/en/1.1.x/
+# guickstart documentation:
 # https://flask.palletsprojects.com/en/1.1.x/quickstart/#quickstart
 
 from flask import Flask
